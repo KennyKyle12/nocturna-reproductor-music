@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nocturna: reproductor de música para escuchar tus canciones favoritas.">
+  <meta name="theme-color" content="#12143A">
+  <title>Nocturna | Reproductor de música</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page">
+
+  <a class="page__skip-link" href="#main-content">Saltar al contenido</a>
+
+  <header class="header" id="site-header">
+    <div class="header__inner">
+
+      <a class="header__logo" href="index.html" aria-label="Nocturna, ir al inicio">
+        <svg class="header__logo-icon" viewBox="0 0 28 28" aria-hidden="true">
+          <defs>
+            <linearGradient id="logo-gradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#8B5CFF"/>
+              <stop offset="1" stop-color="#FF4FA3"/>
+            </linearGradient>
+          </defs>
+          <rect class="header__logo-bar header__logo-bar--1" x="3"  y="9"  width="5" height="16" rx="2.5" fill="url(#logo-gradient)"/>
+          <rect class="header__logo-bar header__logo-bar--2" x="11" y="3"  width="5" height="22" rx="2.5" fill="url(#logo-gradient)"/>
+          <rect class="header__logo-bar header__logo-bar--3" x="19" y="12" width="5" height="13" rx="2.5" fill="url(#logo-gradient)"/>
+        </svg>
+        <span class="header__logo-text">Nocturna</span>
+      </a>
+
+      <nav class="header__nav" id="main-nav" aria-label="Principal">
+        <a class="header__nav-link header__nav-link--active" href="index.html" aria-current="page">Inicio</a>
+        <a class="header__nav-link" href="#explorar">Explorar</a>
+        <a class="header__nav-link" href="#biblioteca">Biblioteca</a>
+        <a class="header__nav-link" href="#playlists">Playlists</a>
+      </nav>
+
+      <form class="header__search" role="search" id="search-form">
+        <label class="header__search-label" for="search-input">
+          <svg class="header__search-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"/>
+            <path d="m20 20-3.5-3.5"/>
+          </svg>
+          <span class="header__search-text">Buscar</span>
+        </label>
+        <input class="header__search-input" id="search-input" type="search" placeholder="Buscar canciones o artistas">
+      </form>
+
+      <a class="btn btn--primary header__cta" href="#iniciar-sesion">Iniciar sesión</a>
+
+      <button class="header__menu-btn" id="menu-toggle" type="button"
+              aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+        <svg class="header__menu-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <main class="main" id="main-content">
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
