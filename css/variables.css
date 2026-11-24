@@ -1,0 +1,52 @@
+:root {
+  --color-night-900: #0A0B24;
+  --color-night-800: #12143A;
+  --color-night-700: #1C1F52;
+  --color-night-500: #4A4F9A;
+
+  --color-violet:  #8B5CFF;
+  --color-magenta: #FF4FA3;
+  --color-cyan:    #3FE0FF;
+  --color-moon:    #F1EEFF;
+  --color-white:   #FFFFFF;
+
+  --gradient-glow: linear-gradient(135deg, var(--color-violet), var(--color-magenta));
+  --shadow-violet: 0 0 24px rgba(139, 92, 255, .35);
+  --shadow-magenta: 0 0 32px rgba(255, 79, 163, .5);
+
+  --font-display: "Unbounded", system-ui, sans-serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --text-sm: 0.875rem;  --text-md: 1rem;  --text-lg: 1.25rem;  --text-xl: 2.5rem;  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  --radius-sm: 8px;
+  --radius-pill: 999px;
+
+  --header-height: 72px;
+  --container-width: 1200px;
+  --control-height: 44px;
+  --transition-fast: .2s ease;
+
+  --player-height: 88px;
+  --color-moon-muted: #B9B5E0;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --header-height: 64px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --player-height: 112px;
+  }
+}

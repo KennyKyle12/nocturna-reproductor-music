@@ -66,7 +66,156 @@
   </header>
 
   <main class="main" id="main-content">
+
+    <section class="hero">
+      <h1 class="hero__title">Tu música, de noche</h1>
+      <p class="hero__text">Descubre canciones, arma tus playlists y deja que la ciudad suene a tu ritmo.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#biblioteca">Escuchar ahora</a>
+        <a class="btn btn--ghost" href="#explorar">Explorar</a>
+      </div>
+    </section>
+
+    <section class="trending section" id="explorar">
+      <h2 class="section__title">En tendencia</h2>
+      <ul class="trending__grid">
+          <li class="trending__item">
+            <button class="card" type="button" data-track="0">
+              <span class="cover cover--1 card__cover"></span>
+              <span class="card__title">Luces de Neón</span>
+              <span class="card__artist">Aurora Vega</span>
+            </button>
+          </li>
+          <li class="trending__item">
+            <button class="card" type="button" data-track="1">
+              <span class="cover cover--2 card__cover"></span>
+              <span class="card__title">Medianoche</span>
+              <span class="card__artist">Los Faroles</span>
+            </button>
+          </li>
+          <li class="trending__item">
+            <button class="card" type="button" data-track="2">
+              <span class="cover cover--3 card__cover"></span>
+              <span class="card__title">Marea Violeta</span>
+              <span class="card__artist">Lunaria</span>
+            </button>
+          </li>
+          <li class="trending__item">
+            <button class="card" type="button" data-track="3">
+              <span class="cover cover--4 card__cover"></span>
+              <span class="card__title">Ciudad Dormida</span>
+              <span class="card__artist">Eco Sur</span>
+            </button>
+          </li>
+      </ul>
+    </section>
+
+    <section class="song-list section" id="biblioteca">
+      <h2 class="section__title">Tu biblioteca</h2>
+      <ul class="song-list__items">
+          <li class="song-list__item">
+            <button class="song-list__btn" type="button" data-track="0">
+              <span class="song-list__num">1</span>
+              <span class="cover cover--1 song-list__cover"></span>
+              <span class="song-list__info">
+                <span class="song-list__title">Luces de Neón</span>
+                <span class="song-list__artist">Aurora Vega</span>
+              </span>
+              <span class="song-list__time">3:24</span>
+            </button>
+          </li>
+          <li class="song-list__item">
+            <button class="song-list__btn" type="button" data-track="1">
+              <span class="song-list__num">2</span>
+              <span class="cover cover--2 song-list__cover"></span>
+              <span class="song-list__info">
+                <span class="song-list__title">Medianoche</span>
+                <span class="song-list__artist">Los Faroles</span>
+              </span>
+              <span class="song-list__time">2:58</span>
+            </button>
+          </li>
+          <li class="song-list__item">
+            <button class="song-list__btn" type="button" data-track="2">
+              <span class="song-list__num">3</span>
+              <span class="cover cover--3 song-list__cover"></span>
+              <span class="song-list__info">
+                <span class="song-list__title">Marea Violeta</span>
+                <span class="song-list__artist">Lunaria</span>
+              </span>
+              <span class="song-list__time">3:41</span>
+            </button>
+          </li>
+          <li class="song-list__item">
+            <button class="song-list__btn" type="button" data-track="3">
+              <span class="song-list__num">4</span>
+              <span class="cover cover--4 song-list__cover"></span>
+              <span class="song-list__info">
+                <span class="song-list__title">Ciudad Dormida</span>
+                <span class="song-list__artist">Eco Sur</span>
+              </span>
+              <span class="song-list__time">4:05</span>
+            </button>
+          </li>
+          <li class="song-list__item">
+            <button class="song-list__btn" type="button" data-track="4">
+              <span class="song-list__num">5</span>
+              <span class="cover cover--5 song-list__cover"></span>
+              <span class="song-list__info">
+                <span class="song-list__title">Cielo Magenta</span>
+                <span class="song-list__artist">Aurora Vega</span>
+              </span>
+              <span class="song-list__time">3:12</span>
+            </button>
+          </li>
+          <li class="song-list__item">
+            <button class="song-list__btn" type="button" data-track="5">
+              <span class="song-list__num">6</span>
+              <span class="cover cover--6 song-list__cover"></span>
+              <span class="song-list__info">
+                <span class="song-list__title">Última Estación</span>
+                <span class="song-list__artist">Nube 9</span>
+              </span>
+              <span class="song-list__time">3:50</span>
+            </button>
+          </li>
+      </ul>
+    </section>
+
   </main>
+
+  <aside class="player" id="player" aria-label="Reproductor">
+    <div class="player__track">
+      <span class="cover cover--1 player__cover" id="player-cover"></span>
+      <span class="player__info">
+        <span class="player__title" id="player-title">Luces de Neón</span>
+        <span class="player__artist" id="player-artist">Aurora Vega</span>
+      </span>
+    </div>
+    <div class="player__main">
+      <div class="player__controls">
+        <button class="player__btn" id="btn-prev" type="button" aria-label="Anterior">
+          <svg class="player__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg>
+        </button>
+        <button class="player__btn player__btn--play" id="btn-play" type="button" aria-label="Reproducir" aria-pressed="false">
+          <svg class="player__icon player__icon--play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          <svg class="player__icon player__icon--pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
+        </button>
+        <button class="player__btn" id="btn-next" type="button" aria-label="Siguiente">
+          <svg class="player__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg>
+        </button>
+      </div>
+      <div class="player__progress">
+        <span class="player__time" id="time-current">0:00</span>
+        <input class="player__range" id="progress" type="range" min="0" max="204" value="0" aria-label="Progreso de la canción">
+        <span class="player__time" id="time-total">3:24</span>
+      </div>
+    </div>
+    <div class="player__volume">
+      <svg class="player__volume-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9z"/></svg>
+      <input class="player__range player__range--volume" id="volume" type="range" min="0" max="100" value="70" aria-label="Volumen">
+    </div>
+  </aside>
 
   <script src="js/main.js"></script>
 </body>

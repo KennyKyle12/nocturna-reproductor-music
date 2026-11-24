@@ -1,0 +1,64 @@
+.song-list__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.song-list__btn {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 32px 48px 1fr auto;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-2) var(--space-4);
+  background: none;
+  border: 0;
+  border-radius: var(--radius-sm);
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.song-list__btn:hover {
+  background: var(--color-night-800);
+}
+
+.song-list__btn--active {
+  background: var(--color-night-700);
+}
+
+.song-list__btn--active .song-list__title {
+  color: var(--color-cyan);
+}
+
+.song-list__cover {
+  width: 48px;
+  height: 48px;
+}
+
+.song-list__info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.song-list__title {
+  font-weight: var(--weight-medium);
+}
+
+.song-list__artist,
+.song-list__num,
+.song-list__time {
+  font-size: var(--text-sm);
+  color: var(--color-moon-muted);
+}
+
+@media (max-width: 767px) {
+  .song-list__btn {
+    grid-template-columns: 24px 44px 1fr auto;
+    gap: var(--space-3);
+    padding: var(--space-2);
+  }
+}

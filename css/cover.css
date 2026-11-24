@@ -1,0 +1,17 @@
+.cover {
+  display: block;
+  flex: none;
+  border-radius: var(--radius-sm);
+}
+
+.cover--1 { background: linear-gradient(135deg, var(--color-violet), var(--color-magenta)); }
+
+.cover--2 { background: linear-gradient(135deg, var(--color-cyan), var(--color-violet)); }
+
+.cover--3 { background: linear-gradient(135deg, var(--color-magenta), var(--color-night-500)); }
+
+.cover--4 { background: linear-gradient(135deg, var(--color-night-500), var(--color-cyan)); }
+
+.cover--5 { background: linear-gradient(135deg, var(--color-violet), var(--color-night-700)); }
+
+.cover--6 { background: linear-gradient(135deg, var(--color-night-700), var(--color-magenta)); }
